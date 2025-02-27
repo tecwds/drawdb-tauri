@@ -15,7 +15,13 @@ export default function App() {
       <BrowserRouter>
         <RestoreScroll />
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<Editor />} />
+          <Route 
+            path="/landingPage"
+            element={
+              <LandingPage />
+            }
+          />
           <Route
             path="/editor"
             element={
